@@ -7,7 +7,6 @@ import Typography from '@material-ui/core/Typography';
 import imgData from '../../FakeData/ImageData';
 
 const CommentDetail = (props) => {
-    console.log(props)
     console.log(imgData)
     const imgData1 = imgData.slice(0, 1)
     const [img] = useState(imgData1)
@@ -34,6 +33,7 @@ const CommentDetail = (props) => {
       <Paper className={classes.paper}>
         <Grid container wrap="nowrap" spacing={2}>
           <Grid item>
+            {/* .....................Profile Image......... */}
           {img.map((comment =>                        
                        <Avatar src={comment.img} alt="Remy Sharp"/>))}  
           </Grid>
